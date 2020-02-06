@@ -34,10 +34,6 @@ spec:
           volumeMounts:
             - name: wordpress-persistent-storage
               mountPath: /var/www/html
-          resources:
-            limits:
-              cpu: 1
-              memory: 512
       volumes:
         - name: wordpress-persistent-storage
           persistentVolumeClaim:
